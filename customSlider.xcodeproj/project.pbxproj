@@ -14,6 +14,9 @@
 		E413E6621ABD4CF600D526D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E413E6611ABD4CF600D526D6 /* Images.xcassets */; };
 		E413E6651ABD4CF600D526D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E413E6631ABD4CF600D526D6 /* LaunchScreen.xib */; };
 		E413E6711ABD4CF600D526D6 /* customSliderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E413E6701ABD4CF600D526D6 /* customSliderTests.m */; };
+		E413E67C1ABD4D3900D526D6 /* RRSliderControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E413E67B1ABD4D3900D526D6 /* RRSliderControl.m */; };
+		E413E67E1ABD4FD500D526D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E413E67D1ABD4FD500D526D6 /* QuartzCore.framework */; };
+		E413E6811ABDD87B00D526D6 /* RRSliderKnob.m in Sources */ = {isa = PBXBuildFile; fileRef = E413E6801ABDD87B00D526D6 /* RRSliderKnob.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		E413E66A1ABD4CF600D526D6 /* customSliderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = customSliderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E413E66F1ABD4CF600D526D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E413E6701ABD4CF600D526D6 /* customSliderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = customSliderTests.m; sourceTree = "<group>"; };
+		E413E67A1ABD4D3900D526D6 /* RRSliderControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRSliderControl.h; sourceTree = "<group>"; };
+		E413E67B1ABD4D3900D526D6 /* RRSliderControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRSliderControl.m; sourceTree = "<group>"; };
+		E413E67D1ABD4FD500D526D6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E413E67F1ABDD87B00D526D6 /* RRSliderKnob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RRSliderKnob.h; path = ../RRSliderKnob.h; sourceTree = "<group>"; };
+		E413E6801ABDD87B00D526D6 /* RRSliderKnob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RRSliderKnob.m; path = ../RRSliderKnob.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E413E67E1ABD4FD500D526D6 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 		E413E6481ABD4CF600D526D6 = {
 			isa = PBXGroup;
 			children = (
+				E413E67D1ABD4FD500D526D6 /* QuartzCore.framework */,
 				E413E6531ABD4CF600D526D6 /* customSlider */,
 				E413E66D1ABD4CF600D526D6 /* customSliderTests */,
 				E413E6521ABD4CF600D526D6 /* Products */,
@@ -85,6 +95,10 @@
 				E413E6591ABD4CF600D526D6 /* AppDelegate.m */,
 				E413E65B1ABD4CF600D526D6 /* ViewController.h */,
 				E413E65C1ABD4CF600D526D6 /* ViewController.m */,
+				E413E67A1ABD4D3900D526D6 /* RRSliderControl.h */,
+				E413E67B1ABD4D3900D526D6 /* RRSliderControl.m */,
+				E413E67F1ABDD87B00D526D6 /* RRSliderKnob.h */,
+				E413E6801ABDD87B00D526D6 /* RRSliderKnob.m */,
 				E413E65E1ABD4CF600D526D6 /* Main.storyboard */,
 				E413E6611ABD4CF600D526D6 /* Images.xcassets */,
 				E413E6631ABD4CF600D526D6 /* LaunchScreen.xib */,
@@ -219,7 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E413E67C1ABD4D3900D526D6 /* RRSliderControl.m in Sources */,
 				E413E65D1ABD4CF600D526D6 /* ViewController.m in Sources */,
+				E413E6811ABDD87B00D526D6 /* RRSliderKnob.m in Sources */,
 				E413E65A1ABD4CF600D526D6 /* AppDelegate.m in Sources */,
 				E413E6571ABD4CF600D526D6 /* main.m in Sources */,
 			);
